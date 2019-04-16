@@ -1,22 +1,22 @@
 package having.fun.with.flatmapinaction.optional;
 
-import having.fun.with.flatmapinaction.optional.service.AccountInfo;
+import having.fun.with.flatmapinaction.optional.model.AccountSummary;
 import having.fun.with.flatmapinaction.optional.service.AccountService;
 
 import java.util.Optional;
 
-public class O1_Optional_as_pure_data_structure {
+public class O3_Optional_as_pure_data_structure {
 
     public static void main(String[] args) {
 
-        Optional<AccountInfo> accountInfo1 = retrieveAccountInfo("001");
-        Optional<AccountInfo> accountInfo2 = retrieveAccountInfo("002");
+        Optional<AccountSummary> accountInfo1 = retrieveAccountInfo("001");
+        Optional<AccountSummary> accountInfo2 = retrieveAccountInfo("002");
 
         System.out.println(accountInfo1);
         System.out.println(accountInfo2);
     }
 
-    public static Optional<AccountInfo> retrieveAccountInfo(String accountId) {
+    public static Optional<AccountSummary> retrieveAccountInfo(String accountId) {
 
         AccountService service = new AccountService();
 
@@ -38,7 +38,7 @@ public class O1_Optional_as_pure_data_structure {
         Double balance = optBalance.get();
 
 
-        AccountInfo info = new AccountInfo(accountId, name, balance);
+        AccountSummary info = new AccountSummary(accountId, name, balance);
 
         return Optional.of(info);
 
