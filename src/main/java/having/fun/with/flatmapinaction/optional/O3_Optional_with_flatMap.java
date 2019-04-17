@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * The mapper function {@code Function<T, Optional< U >} has the access to the value of optional1.
  * With this value (T) you can decide how and what to generate optional2 {@code (Optional<U>)}. in the mapper function.
  */
-public class O2_Optional_with_flatMap {
+public class O3_Optional_with_flatMap {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,6 @@
 package having.fun.with.flatmapinaction.future;
 
 import java.util.Collections;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 

@@ -9,7 +9,7 @@ import java.util.Optional;
  * <p/>
  * If Optional is empty, invoking Optional.map has no effect and this Optional object remains empty.
  */
-public class O1_Optional_with_map {
+public class O2_Optional_with_map {
 
     public static void main(String[] args) {
         Optional<String> optStr1 = Optional.of("123");

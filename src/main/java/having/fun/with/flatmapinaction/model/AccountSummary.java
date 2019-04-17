@@ -1,4 +1,4 @@
-package having.fun.with.flatmapinaction.optional.model;
+package having.fun.with.flatmapinaction.model;
 
 public class AccountSummary {
 
